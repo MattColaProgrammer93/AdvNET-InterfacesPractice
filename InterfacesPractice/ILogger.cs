@@ -8,6 +8,11 @@ namespace InterfacesPractice
 {
     public interface ILogger
     {
+        void Log(string message);
+    }
+
+    public class ConsoleLogger : ILogger
+    {
 
     }
 }
