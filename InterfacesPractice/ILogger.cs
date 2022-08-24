@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,17 @@ namespace InterfacesPractice
 
     public class ConsoleLogger : ILogger
     {
+        public void Log(string message)
+        {
+            Debug.WriteLine(message);
+        }
+    }
 
+    public class FileLogger : ILogger
+    {
+        public void Log(string message)
+        {
+            File.AppendAllText(@"\myFile.txt", message);
+        }
     }
 }
