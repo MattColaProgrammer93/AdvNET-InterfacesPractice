@@ -9,7 +9,7 @@ namespace InterfacesPractice
     /// <summary>
     /// Represents as a single piece of candy
     /// </summary>
-    public class Candy
+    public class Candy : IComparable<Candy> 
     {
         /// <summary>
         /// The candy's name
@@ -25,5 +25,10 @@ namespace InterfacesPractice
         /// The date of the candy created
         /// </summary>
         public DateTime DateOfCreation { get; set; }
+
+        public int CompareTo(Candy? other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
