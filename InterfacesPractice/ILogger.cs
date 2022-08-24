@@ -24,7 +24,7 @@ namespace InterfacesPractice
     {
         public void Log(string message)
         {
-            File.AppendAllText(@"\myFile.txt", message);
+            File.AppendAllText(@"\myFile.txt", $"{message} [{DateTime.Now}] {Environment.NewLine}");
         }
     }
 }
