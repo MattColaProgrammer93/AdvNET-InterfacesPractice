@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCreateAndSort = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCreateAndSort
+            // 
+            this.btnCreateAndSort.Location = new System.Drawing.Point(40, 38);
+            this.btnCreateAndSort.Name = "btnCreateAndSort";
+            this.btnCreateAndSort.Size = new System.Drawing.Size(139, 73);
+            this.btnCreateAndSort.TabIndex = 0;
+            this.btnCreateAndSort.Text = "Create and Sort Candies";
+            this.btnCreateAndSort.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCreateAndSort);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnCreateAndSort;
     }
 }
