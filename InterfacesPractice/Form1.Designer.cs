@@ -39,6 +39,7 @@
             this.btnCreateAndSort.TabIndex = 0;
             this.btnCreateAndSort.Text = "Create and Sort Candies";
             this.btnCreateAndSort.UseVisualStyleBackColor = true;
+            this.btnCreateAndSort.Click += new System.EventHandler(this.btnCreateAndSort_Click);
             // 
             // Form1
             // 
