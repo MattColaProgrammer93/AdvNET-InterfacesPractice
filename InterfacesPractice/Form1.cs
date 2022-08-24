@@ -9,6 +9,10 @@ namespace InterfacesPractice
 
         private void btnCreateAndSort_Click(object sender, EventArgs e)
         {
+            string sentence = "The day is pretty bright, pretty cool right?";
+            int wordCount = sentence.WordCount();
+            MessageBox.Show(wordCount.ToString());
+
             Candy can1 = new()
             {
                 Name = "JollyCracker",
