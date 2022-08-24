@@ -13,5 +13,10 @@ namespace InterfacesPractice
             return str.Split(new char[] { ' ', '.', '?' },
                 StringSplitOptions.RemoveEmptyEntries).Length;
         }
+
+        public static bool IsPhoneNumber(this string str)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
