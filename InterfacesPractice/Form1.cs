@@ -30,11 +30,14 @@ namespace InterfacesPractice
                 DateOfCreation = new DateTime(1999, 9, 12)
             };
 
+            Candy can4 = null!;
+
             List<Candy> candies = new()
             {
                 can1, 
                 can2, 
-                can3
+                can3,
+                can4
             };
 
             candies.Sort();
