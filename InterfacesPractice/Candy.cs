@@ -28,7 +28,7 @@ namespace InterfacesPractice
 
         public int CompareTo(Candy? other)
         {
-            throw new NotImplementedException();
+            return Name.CompareTo(other.Name);
         }
     }
 }
